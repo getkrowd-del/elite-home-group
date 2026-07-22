@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- BASE:START (managed by Coding Agent — do not edit) -->
+<base href="/elite-home-group/">
+<!-- BASE:END -->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+
+<!-- SEO Meta Tags -->
+<title>Elite Home Group — Active Listings</title>
+<meta name="description" content="A curated collection of active residences across Central New York and the Adirondacks, offered by Elite Home Group." />
+<meta property="og:title" content="Elite Home Group — Active Listings" />
+<meta property="og:description" content="A curated collection of active residences across Central New York and the Adirondacks, offered by Elite Home Group." />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Elite Home Group — Active Listings" />
+<meta name="twitter:description" content="A curated collection of active residences across Central New York and the Adirondacks, offered by Elite Home Group." />
+<!-- End SEO Meta Tags -->
+<script data-lp-token-hydrate>
+(function(){try{
+  var slug="lp-mrvcsha7-zzeme";
+  var SK='lp_access_'+slug;
+  var map={access_token:'lp_pw_',allowlist_access_token:'lp_al_',pin_access_token:'lp_pin_',paywall_access_token:'lp_paid_'};
+  var u=new URL(location.href);var found=null;var changed=false;
+  Object.keys(map).forEach(function(p){var v=u.searchParams.get(p);if(v){found=v;try{localStorage.setItem(map[p]+slug,v);}catch(e){}u.searchParams.delete(p);changed=true;}});
+  if(found){try{sessionStorage.setItem(SK,found);}catch(e){}}
+  else{try{if(!sessionStorage.getItem(SK)){var t=localStorage.getItem('lp_pw_'+slug)||localStorage.getItem('lp_al_'+slug)||localStorage.getItem('lp_pin_'+slug)||localStorage.getItem('lp_paid_'+slug);if(t)sessionStorage.setItem(SK,t);}}catch(e){}}
+  if(changed){try{history.replaceState(null,'',u.toString());}catch(e){}}
+  function getTok(){try{return sessionStorage.getItem(SK)||localStorage.getItem('lp_pw_'+slug)||localStorage.getItem('lp_al_'+slug)||localStorage.getItem('lp_pin_'+slug)||localStorage.getItem('lp_paid_'+slug);}catch(e){return null;}}
+  function needsToken(url,method){if(!url)return false;var s=String(url);var m=(method||'GET').toUpperCase();var isSheetWrite=(m==='POST'||m==='PATCH'||m==='PUT'||m==='DELETE')&&/\/sheet-rows(\/|$|\?)/.test(s);var isSheetRead=/\/sheet-data(\/|$|\?)/.test(s);var isLlm=/\/api\/landing-pages\/public\/[^/]+\/(llm|llm-config)(\/|$|\?)/.test(s);return isSheetWrite||isSheetRead||isLlm;}
+  if(window.fetch){var _f=window.fetch;window.fetch=function(input,init){try{var url=typeof input==='string'?input:(input&&input.url)||'';var method=(init&&init.method)||(input&&input.method)||'GET';if(needsToken(url,method)){var tok=getTok();if(tok){init=init||{};var h=new Headers(init.headers||(typeof input!=='string'?input.headers:undefined)||{});if(!h.has('X-Landing-Page-Token'))h.set('X-Landing-Page-Token',tok);init.headers=h;}}}catch(e){}return _f.call(this,input,init);};}
+  if(window.XMLHttpRequest){var _o=XMLHttpRequest.prototype.open;var _s=XMLHttpRequest.prototype.send;XMLHttpRequest.prototype.open=function(m,u){this.__lpM=m;this.__lpU=u;return _o.apply(this,arguments);};XMLHttpRequest.prototype.send=function(){try{if(needsToken(this.__lpU,this.__lpM)){var tok=getTok();if(tok)this.setRequestHeader('X-Landing-Page-Token',tok);}}catch(e){}return _s.apply(this,arguments);};}
+}catch(e){}})();
+</script>
+
+<script data-field-replace>
+(function(){
+  var params=new URLSearchParams(window.location.search);
+  var fields={};
+  var paramMap={
+    'first_name':'firstName','last_name':'lastName','full_name':'fullName',
+    'email':'email','phone':'phone','company':'company',
+    'city':'city','state':'state','country':'country'
+  };
+  var skipTags={'SCRIPT':1,'STYLE':1,'NOSCRIPT':1,'TEXTAREA':1,'CODE':1,'PRE':1};
+  var hasUrlFields=false;
+  for(var p in paramMap){
+    var v=params.get(p);
+    if(v){fields[paramMap[p]]=v;hasUrlFields=true;}
+  }
+  var contactId=params.get('contact_id');
+  function esc(s){
+    if(!s)return s;
+    var d=document.createElement('div');
+    d.appendChild(document.createTextNode(s));
+    return d.innerHTML;
+  }
+  function doReplace(data){
+    var r={};
+    r['{{full_name}}']=esc(((data.firstName||'')+' '+(data.lastName||'')).trim()||((data.fullName||data.name)||''));
+    r['{{first_name}}']=esc(data.firstName||(data.name?data.name.split(' ')[0]:'')||'');
+    r['{{last_name}}']=esc(data.lastName||(data.name&&data.name.indexOf(' ')>-1?data.name.substring(data.name.indexOf(' ')+1):'')||'');
+    r['{{email}}']=esc(data.email||'');
+    r['{{phone}}']=esc(data.phone||'');
+    r['{{company}}']=esc(data.company||'');
+    r['{{city}}']=esc(data.city||'');
+    r['{{state}}']=esc(data.state||'');
+    r['{{country}}']=esc(data.country||'');
+    r['{{date}}']=new Date().toLocaleDateString();
+    r['{{time}}']=new Date().toLocaleTimeString();
+    r['{{location}}']=[data.city,data.state,data.country].filter(Boolean).join(', ');
+    r['{{tracking_id}}']=esc(data.trackingId||'');
+    r['{{lastClickedProduct}}']=esc(data.lastClickedProduct||'');
+    r['{{lastProductClickDate}}']=esc(data.lastProductClickDate||'');
+    r['{{lastClickedProductPrice}}']=esc(data.lastClickedProductPrice||'');
+    r['{{lastClickedProductURL}}']=esc(data.lastClickedProductURL||'');
+    r['{{productsClickedCount}}']=esc(data.productsClickedCount||'0');
+    r['{{ip_address}}']=esc(data.ipAddress||'');
+    r['{{ip}}']=esc(data.ipAddress||'');
+    if(data.customFields){
+      for(var k in data.customFields){
+        r['{{'+k+'}}']=esc(String(data.customFields[k]||''));
+      }
+    }
+    params.forEach(function(v,k){
+      if(!paramMap[k]&&k!=='contact_id'&&k!=='page_id'&&k.indexOf('utm_')!==0){
+        r['{{'+k+'}}']=esc(v);
+      }
+    });
+    var hasValues=false;
+    for(var key in r){if(r[key]){hasValues=true;break;}}
+    if(!hasValues)return;
+    var walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,{
+      acceptNode:function(n){
+        var p=n.parentNode;
+        if(p&&skipTags[p.nodeName])return NodeFilter.FILTER_REJECT;
+        return NodeFilter.FILTER_ACCEPT;
+      }
+    });
+    var node;
+    while(node=walker.nextNode()){
+      var txt=node.nodeValue;
+      if(txt&&txt.indexOf('{{')>-1){
+        var changed=txt;
+        for(var ph in r){
+          if(r[ph]&&changed.indexOf(ph)>-1){
+            changed=changed.split(ph).join(r[ph]);
+          }
+        }
+        if(changed!==txt)node.nodeValue=changed;
+      }
+    }
+    var attrs=['value','placeholder','content','alt','title'];
+    attrs.forEach(function(attr){
+      var els=document.querySelectorAll('['+attr+'*="{{"]');
+      for(var i=0;i<els.length;i++){
+        var tag=els[i].tagName;
+        if(skipTags[tag])continue;
+        var val=els[i].getAttribute(attr);
+        if(val){
+          var nv=val;
+          for(var ph in r){
+            if(r[ph]&&nv.indexOf(ph)>-1){
+              nv=nv.split(ph).join(r[ph]);
+            }
+          }
+          if(nv!==val)els[i].setAttribute(attr,nv);
+        }
+      }
+    });
+  }
+  function run(){
+    if(contactId){
+      var xhr=new XMLHttpRequest();
+      xhr.open('GET','https://paymegpt.com/api/landing/context/'+encodeURIComponent(contactId)+'?page_id=5673');
+      xhr.onload=function(){
+        if(xhr.status===200){
+          try{
+            var resp=JSON.parse(xhr.responseText);
+            if(resp.success&&resp.contact){
+              var merged=resp.contact;
+              for(var k in fields){merged[k]=fields[k];}
+              doReplace(merged);
+              return;
+            }
+          }catch(e){}
+        }
+        if(hasUrlFields)doReplace(fields);
+      };
+      xhr.onerror=function(){if(hasUrlFields)doReplace(fields);};
+      xhr.send();
+    }else if(hasUrlFields){
+      doReplace(fields);
+    }
+  }
+  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',run);}
+  else{run();}
+})();
+</script>
+<script data-payment>
+(function(){
+  var slug='T68iytrWj';
+  var apiBase='https://paymegpt.com';
+  var successSubtext='';var successBtnLabel='Continue';var successBtnColor='#16a34a';var successRedirect='';
+  function findEmail(){
+    var ids=['email','emailAddress','buyer-email','buyerEmail','user-email','userEmail','checkout-email','customer-email','contact-email'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.includes('@'))return el.value.trim();}
+    var inputs=document.querySelectorAll('input[type="email"],input[name*="email"],input[placeholder*="email"],input[placeholder*="Email"]');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.includes('@'))return inputs[j].value.trim();}
+    return '';
+  }
+  function findName(){
+    var ids=['name','fullName','full-name','buyer-name','buyerName','customer-name','userName','user-name'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value)return el.value.trim();}
+    var inputs=document.querySelectorAll('input[name*="name"]:not([name*="email"]):not([type="email"]),input[placeholder*="name"]:not([placeholder*="email"]):not([type="email"]),input[placeholder*="Name"]:not([type="email"])');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value)return inputs[j].value.trim();}
+    return '';
+  }
+  function findPhone(){var ids=['phone','phoneNumber','phone-number','tel','telephone','mobile','mobileNumber','cell','contact-phone','buyer-phone'];for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.trim())return el.value.trim();}var inputs=document.querySelectorAll('input[type="tel"],input[name*="phone"],input[name*="tel"],input[name*="mobile"],input[placeholder*="phone"],input[placeholder*="Phone"]');for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.trim())return inputs[j].value.trim();}return '';}
+  var __realProcessPayment=function(a,b,c,d,e){
+    var amountCents,email,productName,productDescription,customerName,quantity;
+    if(a&&typeof a==='object'){
+      amountCents=a.amountCents;email=a.email;productName=a.productName;
+      productDescription=a.productDescription||'';customerName=a.name||'';quantity=a.quantity||1;
+    }else{
+      amountCents=typeof a==='number'?a:0;productName=typeof b==='string'?b:'';
+      productDescription=typeof c==='string'?c:'';email='';customerName='';quantity=1;
+    }
+    if(!email)email=findEmail();
+    if(!customerName)customerName=findName();
+    var phone=findPhone();
+    if(!productName){alert('Product name is required.');return Promise.reject('no_product_name');}
+    if(!amountCents||amountCents<100){alert('Amount must be at least $1.00');return Promise.reject('invalid_amount');}
+    if(!email){alert('Please enter your email address.');return Promise.reject('no_email');}
+    var successBase=window.location.href.split('?')[0];
+    var __pLoc=(document.documentElement.lang||navigator.language||'en');
+    return fetch(apiBase+'/api/landing-pages/public/'+slug+'/payment/checkout',{
+      method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({email:email,name:customerName,phone:phone||'',amountCents:amountCents,productName:productName,productDescription:productDescription,quantity:quantity,locale:__pLoc,successUrl:successBase+'?payment=success&product='+encodeURIComponent(productName)+'&session_id={CHECKOUT_SESSION_ID}',cancelUrl:successBase+'?payment=cancelled'})
+    }).then(function(r){return r.json();}).then(function(d){
+      if(d.checkoutUrl){window.location.href=d.checkoutUrl;}
+      else{alert(d.error||'Failed to process payment');throw new Error(d.error);}
+    });
+  };
+  Object.defineProperty(window,'__processPayment',{value:__realProcessPayment,writable:false,configurable:false});
+  document.addEventListener('DOMContentLoaded',function(){
+    var urlParams=new URLSearchParams(window.location.search);
+    if(urlParams.get('payment')==='success'){
+      var sidP=urlParams.get('session_id');
+      if(sidP){try{fetch(apiBase+'/api/landing-pages/public/'+slug+'/checkout/confirm',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({sessionId:sidP})}).catch(function(){});}catch(e){}}
+      var pName=urlParams.get('product')||'your item';
+      var overlay=document.createElement('div');overlay.id='payment-success-overlay';
+      overlay.style.cssText='position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;z-index:999999;font-family:system-ui,-apple-system,sans-serif;';
+      function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+      var subTxt=successSubtext||('Thank you for purchasing '+pName+'.');
+      overlay.innerHTML='<div style="background:white;border-radius:16px;padding:40px;max-width:420px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.15);"><div style="width:64px;height:64px;border-radius:50%;background:#dcfce7;margin:0 auto 20px;display:flex;align-items:center;justify-content:center;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><h2 style="margin:0 0 12px;font-size:24px;font-weight:700;color:#111827;">Payment Successful!</h2><p style="margin:0 0 24px;color:#6b7280;font-size:16px;">'+esc(subTxt)+'</p><button id="lp-pay-success-btn" style="padding:12px 32px;font-size:16px;font-weight:600;background:'+successBtnColor+';color:white;border:none;border-radius:8px;cursor:pointer;">'+esc(successBtnLabel)+'</button></div>';
+      document.body.appendChild(overlay);
+      var pBtn=document.getElementById('lp-pay-success-btn');
+      if(pBtn){pBtn.addEventListener('click',function(){if(successRedirect){window.location.href=successRedirect;}else{overlay.remove();window.history.replaceState({},'',window.location.pathname);}});}
+    }
+  });
+})();
+</script>
+<script data-cart>
+(function(){
+  var slug='T68iytrWj';
+  var apiBase='https://paymegpt.com';
+  var successSubtext='';var successBtnLabel='Continue';var successBtnColor='#16a34a';var successRedirect='';
+  function findCartEmail(){
+    var ids=['email','emailAddress','buyer-email','buyerEmail','user-email','userEmail','checkout-email','customer-email','contact-email'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.includes('@'))return el.value.trim();}
+    var inputs=document.querySelectorAll('input[type="email"],input[name*="email"],input[placeholder*="email"],input[placeholder*="Email"]');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.includes('@'))return inputs[j].value.trim();}
+    return '';
+  }
+  function findCartName(){
+    var ids=['name','fullName','full-name','buyer-name','buyerName','customer-name','userName','user-name'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value)return el.value.trim();}
+    var inputs=document.querySelectorAll('input[name*="name"]:not([name*="email"]):not([type="email"]),input[placeholder*="name"]:not([placeholder*="email"]):not([type="email"]),input[placeholder*="Name"]:not([type="email"])');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value)return inputs[j].value.trim();}
+    return '';
+  }
+  function findCartPhone(){var ids=['phone','phoneNumber','phone-number','tel','telephone','mobile','mobileNumber','cell','contact-phone','buyer-phone'];for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.trim())return el.value.trim();}var inputs=document.querySelectorAll('input[type="tel"],input[name*="phone"],input[name*="tel"],input[name*="mobile"],input[placeholder*="phone"],input[placeholder*="Phone"]');for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.trim())return inputs[j].value.trim();}return '';}
+  var __realCart=function(arg){
+    var items, email='', customerName='', successUrl, cancelUrl, currency;
+    if(Array.isArray(arg)){items=arg;}
+    else if(arg&&typeof arg==='object'){
+      items=arg.items;email=arg.email||'';customerName=arg.name||arg.customerName||'';
+      successUrl=arg.successUrl;cancelUrl=arg.cancelUrl;currency=arg.currency;
+    }
+    if(!Array.isArray(items)||items.length===0){alert('No items in cart.');return Promise.reject('no_items');}
+    var cleanItems=[];var totalCents=0;
+    for(var i=0;i<items.length;i++){
+      var it=items[i];if(!it||typeof it!=='object'){alert('Invalid item at position '+i);return Promise.reject('bad_item');}
+      var nm=typeof it.name==='string'?it.name.trim():'';
+      if(!nm){alert('Item '+(i+1)+' is missing a name.');return Promise.reject('no_name');}
+      var amt=typeof it.amountCents==='number'?it.amountCents:(typeof it.amount==='number'?Math.round(it.amount*100):NaN);
+      if(!isFinite(amt)||amt<1){alert('Item "'+nm+'" needs a valid amount in cents.');return Promise.reject('bad_amount');}
+      var qty=(typeof it.quantity==='number'&&it.quantity>0)?Math.floor(it.quantity):1;
+      cleanItems.push({name:nm,description:it.description||'',amountCents:amt,quantity:qty});
+      totalCents+=amt*qty;
+    }
+    if(totalCents<50){alert('Cart total must be at least $0.50');return Promise.reject('total_too_low');}
+    if(!email)email=findCartEmail();
+    if(!customerName)customerName=findCartName();
+    var cartPhone=findCartPhone();
+    if(!email){var p=window.prompt('Enter your email for the receipt:','');if(p&&p.indexOf('@')>-1){email=p.trim();}else{alert('An email address is required to complete checkout.');return Promise.reject('no_email');}}
+    var successBase=window.location.href.split('?')[0];
+    var body={email:email,name:customerName,items:cleanItems,locale:(document.documentElement.lang||navigator.language||'en')};
+    if(currency)body.currency=currency;
+    if(cartPhone)body.phone=cartPhone;
+    body.successUrl=successUrl||(successBase+'?cart=success&email='+encodeURIComponent(email)+'&session_id={CHECKOUT_SESSION_ID}');
+    body.cancelUrl=cancelUrl||(successBase+'?cart=cancelled');
+    return fetch(apiBase+'/api/landing-pages/public/'+slug+'/cart/checkout',{
+      method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify(body)
+    }).then(function(r){return r.json();}).then(function(d){
+      if(d.checkoutUrl){window.location.href=d.checkoutUrl;}
+      else{alert(d.error||'Failed to process checkout');throw new Error(d.error);}
+    });
+  };
+  try{Object.defineProperty(window,'__processCart',{value:__realCart,writable:false,configurable:false});}catch(e){window.__processCart=__realCart;}
+  document.addEventListener('DOMContentLoaded',function(){
+    var urlParams=new URLSearchParams(window.location.search);
+    if(urlParams.get('cart')==='success'){
+      var sidC=urlParams.get('session_id');
+      if(sidC){try{fetch(apiBase+'/api/landing-pages/public/'+slug+'/checkout/confirm',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({sessionId:sidC})}).catch(function(){});}catch(e){}}
+      if(document.getElementById('payment-success-overlay')||document.getElementById('donation-success-overlay')||document.getElementById('cart-success-overlay'))return;
+      var overlay=document.createElement('div');overlay.id='cart-success-overlay';
+      overlay.style.cssText='position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;z-index:999999;font-family:system-ui,-apple-system,sans-serif;';
+      function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+      var subTxt=successSubtext||'Thank you for your order.';
+      overlay.innerHTML='<div style="background:white;border-radius:16px;padding:40px;max-width:420px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.15);"><div style="width:64px;height:64px;border-radius:50%;background:#dcfce7;margin:0 auto 20px;display:flex;align-items:center;justify-content:center;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><h2 style="margin:0 0 12px;font-size:24px;font-weight:700;color:#111827;">Order Confirmed!</h2><p style="margin:0 0 24px;color:#6b7280;font-size:16px;">'+esc(subTxt)+'</p><button id="lp-cart-success-btn" style="padding:12px 32px;font-size:16px;font-weight:600;background:'+successBtnColor+';color:white;border:none;border-radius:8px;cursor:pointer;">'+esc(successBtnLabel)+'</button></div>';
+      document.body.appendChild(overlay);
+      var cBtn=document.getElementById('lp-cart-success-btn');
+      if(cBtn){cBtn.addEventListener('click',function(){if(successRedirect){window.location.href=successRedirect;}else{overlay.remove();window.history.replaceState({},'',window.location.pathname);}});}
+    }
+  });
+})();
+</script>  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <div class="brand"><img src="https://krowdimg.b-cdn.net/Elite%20Home/logo.png" alt="Elite Home Group logo" class="brand-logo">Elite Home <b>Group</b></div>
+    <nav class="nav-links">
+      <a href="#listings">Listings</a>
+      <a href="#" onclick="openChat();return false">Ask Us</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+<section class="hero wrap" data-section="hero">
+  <div class="eyebrow">Mohawk Valley · Central New York</div>
+  <h1>Homes worth <em>staying</em> for.</h1>
+  <p>A curated collection of active residences across Oneida, Herkimer, and the greater Adirondack region — from village classics to lakefront retreats.</p>
+  <div class="hero-stats">
+    <div class="hstat"><div class="n" id="statCount">—</div><div class="l">Active Listings</div></div>
+    <div class="hstat"><div class="n" id="statRange">—</div><div class="l">Price Range</div></div>
+    <div class="hstat"><div class="n">8</div><div class="l">Communities</div></div>
+  </div>
+</section>
+<div class="wrap" id="listings" data-section="listings">
+  <div class="controls">
+    <div class="section-label">Active Collection</div>
+    <div class="filters">
+      <button class="chip on" data-f="all">All</button>
+      <button class="chip" data-f="under500">Under $500k</button>
+      <button class="chip" data-f="500plus">$500k+</button>
+    </div>
+  </div>
+  <div class="grid" id="grid"></div>
+</div>
+<footer id="contact" data-section="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <img class="foot-photo" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800&auto=format&fit=crop" alt="Victoria Sterling">
+        <div class="foot-badges"><span>◆ Equal Housing</span><span>⌂ Realtor</span></div>
+      </div>
+      <div>
+        <div class="foot-eyebrow">Elite Home Group · Private Collection</div>
+        <div class="foot-name">Victoria Sterling</div>
+        <div class="foot-title">Principal Realtor &amp; Luxury Specialist</div>
+        <div class="foot-bio">Representing premier residential properties with over 14 years of dedicated real estate excellence, personalized service, and local market mastery.</div>
+        <div class="foot-lic">NY RE Lic <b>#10401298451</b></div>
+      </div>
+      <div class="foot-actions">
+        <a class="fbtn primary" href="tel:+13157948820">Call (315) 794-8820</a>
+        <a class="fbtn" href="mailto:victoria@elitehomegroup.com">Email Agent</a>
+        <a class="fbtn" href="#" onclick="return false">Save Contact (vCard)</a>
+      </div>
+    </div>
+    <div class="foot-connect">
+      <span class="label">Connect with Victoria</span>
+      <div class="socials">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="LinkedIn">IN</a>
+        <a href="#" aria-label="Facebook">FB</a>
+        <a href="#" aria-label="Zillow">Z</a>
+      </div>
+    </div>
+    <div class="foot-fine">1715 Sherman Dr, New Hartford, NY 13413 · $739,900 · © 2026 Elite Home Group. All information deemed reliable but not guaranteed.</div>
+    <img class="foot-logo" src="https://krowdimg.b-cdn.net/Elite%20Home/logo.png" alt="Elite Home Group">
+  </div>
+</footer>
+<div id="modal" onclick="if(event.target===this)closeModal()">
+  <div class="sheet" id="sheet"></div>
+</div>
+<button id="chatBtn" onclick="toggleChat()" aria-label="Open chat">
+  <img src="https://krowdimg.b-cdn.net/clients/homes-and-realty/homechat.png" alt="Chat with us">
+  <span class="dot"></span>
+</button>
+<div id="chatPanel" role="dialog" aria-label="Chat with Elite Home Group">
+  <div class="chat-head">
+    <img src="https://krowdimg.b-cdn.net/clients/homes-and-realty/homechat.png" alt="">
+    <div><div class="t">Ask Elite Home Group</div><div class="s">Listings &amp; buying questions</div></div>
+    <button class="x" onclick="toggleChat()" aria-label="Close">×</button>
+  </div>
+  <div class="chat-body" id="chatBody">
+    <div class="msg bot">Hi! I can help with any of our active listings — price, beds, square footage, or where they are. What are you looking for?</div>
+  </div>
+  <div class="suggests" id="suggests">
+    <button onclick="ask(this.textContent)">What's your most affordable home?</button>
+    <button onclick="ask(this.textContent)">Any homes with 5 bedrooms?</button>
+    <button onclick="ask(this.textContent)">Show me lakefront properties</button>
+    <button onclick="ask(this.textContent)">What's in New Hartford?</button>
+  </div>
+  <div class="chat-foot">
+    <input id="chatInput" placeholder="Type a question…" onkeydown="if(event.key==='Enter')send()">
+    <button onclick="send()">Send</button>
+  </div>
+</div>
+<script>
+const PROPS = [{"id":214,"addr":"1715 Sherman Dr","city":"New Hartford","state":"NY","zip":"13413","price":739900,"beds":4,"baths":4,"sqft":4206,"img":"https://krowdimg.b-cdn.net/propertyImg_214_stream_86696_20260720133720.jpg","desc":"Set behind a circular drive on nearly two landscaped acres, this architect-designed brick & cedar residence pairs enduring craftsmanship with more than 4,200 square feet of considered space. A spectacular family room sits beneath oversized windows, a richly paneled library and bar keeps its own hearth, and an elegant formal dining room opens to a sunlit breakfast area off the kitchen. Upstairs, a spacious primary suite joins three further bedrooms.","gallery":[{"room":"Exterior Front","url":"https://krowdimg.b-cdn.net/propertyImg_214_stream_86696_20260720133720.jpg"},{"room":"Foyer / Entryway","url":"https://krowdimg.b-cdn.net/propertyImg_214_stream_94935_20260720133720.jpg"},{"room":"Bar","url":"https://krowdimg.b-cdn.net/propertyImg_214_stream_49465_20260720133721.jpg"},{"room":"Family Room","url":"https://krowdimg.b-cdn.net/propertyImg_214_stream_26357_20260720133721.jpg"},{"room":"Dining Room","url":"https://krowdimg.b-cdn.net/propertyImg_214_stream_74039_20260720133721.jpg"},{"room":"Bathroom","url":"https://krowdimg.b-cdn.net/propertyImg_214_stream_89025_20260720133722.jpg"},{"room":"Kitchen","url":"https://krowdimg.b-cdn.net/propertyImg_214_stream_79525_20260720133722.jpg"},{"room":"Family Room","url":"https://krowdimg.b-cdn.net/propertyImg_214_stream_24697_20260720133722.jpg"}]},{"id":213,"addr":"10599 Doyle Rd","city":"Deerfield","state":"NY","zip":"13502","price":665000,"beds":5,"baths":4,"sqft":3716,"img":"https://krowdimg.b-cdn.net/propertyImg_213_stream_22811_20260714183942.jpg","desc":"A generous five-bedroom retreat on Doyle Road, purpose-built for family life and entertaining across 3,716 square feet. The open kitchen flows to a bright living room, while a dedicated office and a private home gym give room to work and train without leaving home. Step out to a covered patio and level backyard made for summer evenings.","gallery":[{"room":"Kitchen","url":"https://krowdimg.b-cdn.net/propertyImg_213_stream_22811_20260714183942.jpg"},{"room":"Living Room","url":"https://krowdimg.b-cdn.net/propertyImg_213_stream_95648_20260714183943.jpg"},{"room":"Backyard / Patio","url":"https://krowdimg.b-cdn.net/propertyImg_213_stream_58568_20260714183943.jpg"},{"room":"Kitchen","url":"https://krowdimg.b-cdn.net/propertyImg_213_stream_20584_20260714183943.jpg"},{"room":"Office / Den","url":"https://krowdimg.b-cdn.net/propertyImg_213_stream_40144_20260714183944.jpg"},{"room":"Gym","url":"https://krowdimg.b-cdn.net/propertyImg_213_stream_27855_20260714183944.jpg"},{"room":"Master Bedroom","url":"https://krowdimg.b-cdn.net/propertyImg_213_stream_75315_20260714183945.jpg"},{"room":"Kitchen","url":"https://krowdimg.b-cdn.net/propertyImg_213_stream_23926_20260714183945.jpg"}]},{"id":211,"addr":"106 Mosher Rd","city":"Sand Lake","state":"NY","zip":"12153","price":650000,"beds":3,"baths":3,"sqft":2041,"img":"https://krowdimg.b-cdn.net/propertyImg_211_stream_71108_20260713135431.jpg","desc":"A refined three-bedroom on coveted Mosher Road, where an inviting foyer opens to light-filled living spaces and a formal dining room. Just over 2,000 square feet of easy, single-family comfort, wrapped by a private front and back exterior with mature surroundings.","gallery":[{"room":"Living Room","url":"https://krowdimg.b-cdn.net/propertyImg_211_stream_71108_20260713135431.jpg"},{"room":"Living Room","url":"https://krowdimg.b-cdn.net/propertyImg_211_stream_97954_20260713135432.jpg"},{"room":"Foyer / Entryway","url":"https://krowdimg.b-cdn.net/propertyImg_211_stream_52732_20260713135433.jpg"},{"room":"Exterior Front","url":"https://krowdimg.b-cdn.net/propertyImg_211_stream_61632_20260713135435.jpg"},{"room":"Dining Room","url":"https://krowdimg.b-cdn.net/propertyImg_211_stream_34513_20260713135436.jpg"},{"room":"Exterior Back","url":"https://krowdimg.b-cdn.net/propertyImg_211_stream_81131_20260713135439.jpg"}]},{"id":210,"addr":"207 Burwell St","city":"Little Falls","state":"NY","zip":"13365","price":216900,"beds":3,"baths":1,"sqft":1707,"img":"https://krowdimg.b-cdn.net/propertyImg_210_stream_68920_20260713134955.png","desc":"A charming and well-kept village home in Little Falls, offering three bedrooms and classic character at an accessible price. A functional kitchen, comfortable living room, and a fenced backyard patio make this an ideal first home or right-sized move.","gallery":[{"room":"Kitchen","url":"https://krowdimg.b-cdn.net/propertyImg_210_stream_68920_20260713134955.png"},{"room":"Backyard / Patio","url":"https://krowdimg.b-cdn.net/propertyImg_210_stream_31676_20260713134955.jpg"},{"room":"Living Room","url":"https://krowdimg.b-cdn.net/propertyImg_210_stream_74021_20260713134957.jpg"},{"room":"Exterior Front","url":"https://krowdimg.b-cdn.net/propertyImg_210_stream_25307_20260713135004.jpg"}]},{"id":208,"addr":"274 Reservoir Hill Rd","city":"Plymouth","state":"NY","zip":"13815","price":750000,"beds":3,"baths":3,"sqft":3500,"img":"https://krowdimg.b-cdn.net/propertyImg_208_stream_56300_20260713023736.png","desc":"A private country residence on Reservoir Hill Road, spanning 3,500 square feet across three bedrooms and three baths. Expansive family and living rooms, an updated kitchen, and multiple full baths are matched by a sweeping backyard and patio with room to roam.","gallery":[{"room":"Backyard / Patio","url":"https://krowdimg.b-cdn.net/propertyImg_208_stream_56300_20260713023736.png"},{"room":"Bathroom","url":"https://krowdimg.b-cdn.net/propertyImg_208_stream_30430_20260713023737.jpg"},{"room":"Family Room","url":"https://krowdimg.b-cdn.net/propertyImg_208_stream_51307_20260713023737.png"},{"room":"Bathroom","url":"https://krowdimg.b-cdn.net/propertyImg_208_stream_59715_20260713023737.png"},{"room":"Kitchen","url":"https://krowdimg.b-cdn.net/propertyImg_208_stream_72778_20260713023737.png"},{"room":"Living Room","url":"https://krowdimg.b-cdn.net/propertyImg_208_stream_55158_20260713023737.png"},{"room":"Kitchen","url":"https://krowdimg.b-cdn.net/propertyImg_208_stream_26679_20260713023738.jpg"}]},{"id":207,"addr":"117 Washington Square","city":"Caroga Lake","state":"NY","zip":"12032","price":449500,"beds":3,"baths":2,"sqft":1862,"img":"https://krowdimg.b-cdn.net/propertyImg_207_stream_43564_20260711220908.png","desc":"A lakeside-community home in Caroga Lake on historic Washington Square. Bright, layered living spaces open to a welcoming dining room and kitchen, while the private backyard and patio invite Adirondack-edge living. Three bedrooms, two baths, and 1,862 easygoing square feet.","gallery":[{"room":"Living Room","url":"https://krowdimg.b-cdn.net/propertyImg_207_stream_43564_20260711220908.png"},{"room":"Living Room","url":"https://krowdimg.b-cdn.net/propertyImg_207_stream_38817_20260711220911.png"},{"room":"Kitchen","url":"https://krowdimg.b-cdn.net/propertyImg_207_stream_94781_20260711220922.png"},{"room":"Dining Room","url":"https://krowdimg.b-cdn.net/propertyImg_207_stream_57997_20260711220928.png"},{"room":"Backyard / Patio","url":"https://krowdimg.b-cdn.net/propertyImg_207_stream_18767_20260711220931.png"}]},{"id":206,"addr":"8 Silver Birch Ct","city":"New Hartford","state":"NY","zip":"13413","price":749900,"beds":4,"baths":3,"sqft":2940,"img":"https://krowdimg.b-cdn.net/clients/pavia-real-estate/image%20(3).jpeg","desc":"A tailored four-bedroom on a quiet New Hartford cul-de-sac, finished with an entertainer's kitchen, formal dining, and a dedicated main-floor office. A finished basement extends the living space, and the level, fenced backyard completes an exceptional family package.","gallery":[{"room":"Kitchen","url":"https://krowdimg.b-cdn.net/clients/pavia-real-estate/image%20(3).jpeg"},{"room":"Dining Room","url":"https://krowdimg.b-cdn.net/clients/pavia-real-estate/image%20(4).jpeg"},{"room":"Living Room","url":"https://krowdimg.b-cdn.net/clients/pavia-real-estate/image%20(5).jpeg"},{"room":"Office","url":"https://krowdimg.b-cdn.net/clients/pavia-real-estate/image%20(6).jpeg"},{"room":"Bedroom","url":"https://krowdimg.b-cdn.net/clients/pavia-real-estate/image%20(7).jpeg"},{"room":"Finished Basement","url":"https://krowdimg.b-cdn.net/clients/pavia-real-estate/image%20(8).jpeg"},{"room":"Back Yard","url":"https://krowdimg.b-cdn.net/clients/pavia-real-estate/image%20(9).jpeg"}]},{"id":205,"addr":"10 Gull Pond Rd","city":"Tupper Lake","state":"NY","zip":"12986","price":1250000,"beds":5,"baths":3,"sqft":2160,"img":"https://photos.zillowstatic.com/fp/307778c52767710ec0f5fd70b0e87572-cc_ft_576.webp","desc":"A rare lakefront offering on Gull Pond Road in Tupper Lake \u2014 five bedrooms and direct water frontage in the heart of the Adirondacks. Wake to lake views from the primary suite, gather in the open family room and kitchen, and step down to the shoreline, dock, and multiple patios. A true four-season retreat.","gallery":[{"room":"Bed Room","url":"https://photos.zillowstatic.com/fp/307778c52767710ec0f5fd70b0e87572-cc_ft_576.webp"},{"room":"Kitchen","url":"https://krowdimg.b-cdn.net/propertyImg_205_stream_39593_20260712132449.png"},{"room":"Backyard / Patio","url":"https://krowdimg.b-cdn.net/propertyImg_205_stream_94869_20260712132450.png"},{"room":"Dining Room","url":"https://krowdimg.b-cdn.net/propertyImg_205_stream_62580_20260712132450.png"},{"room":"Backyard / Patio","url":"https://krowdimg.b-cdn.net/propertyImg_205_stream_70653_20260712132450.png"},{"room":"Lakefront","url":"https://krowdimg.b-cdn.net/propertyImg_205_stream_51182_20260712132450.png"},{"room":"Bathroom","url":"https://krowdimg.b-cdn.net/propertyImg_205_stream_54890_20260712132450.png"},{"room":"Office / Den","url":"https://krowdimg.b-cdn.net/propertyImg_205_stream_77617_20260712132451.png"},{"room":"Backyard / Patio","url":"https://krowdimg.b-cdn.net/propertyImg_205_stream_65189_20260712132451.png"},{"room":"Family Room","url":"https://krowdimg.b-cdn.net/propertyImg_205_stream_74551_20260712132451.png"},{"room":"Kitchen","url":"https://krowdimg.b-cdn.net/propertyImg_205_stream_86129_20260712132451.png"}]}];
+
+const fmt = n => "$"+n.toLocaleString();
+const sorted = [...PROPS].sort((a,b)=>b.price-a.price);
+let filter="all";
+function matches(p){
+  if(filter==="under500") return p.price<500000;
+  if(filter==="500plus") return p.price>=500000;
+  return true;
+}
+function render(){
+  const grid=document.getElementById("grid"); grid.innerHTML="";
+  sorted.filter(matches).forEach((p,i)=>{
+    const c=document.createElement("div"); c.className="card";
+    c.innerHTML=`<div class="card-img" onclick="openModal(${p.id})">
+        <span class="badge">Active</span>
+        <img src="${p.img}" alt="${p.addr}" loading="lazy">
+        <span class="imgcount">◲ ${p.gallery.length} photos</span>
+      </div>
+      <div class="card-body"><div class="price">${fmt(p.price)}</div>
+      <div><div class="addr">${p.addr}</div><div class="loc">${p.city}, ${p.state} ${p.zip}</div></div>
+      <div class="specs"><span><b>${p.beds}</b> bd</span><span><b>${p.baths}</b> ba</span><span><b>${p.sqft.toLocaleString()}</b> sqft</span></div>
+      <button class="detail-btn" onclick="openModal(${p.id})">View details &amp; photos</button>
+      </div>`;
+    grid.appendChild(c); setTimeout(()=>c.classList.add("in"), 40*i);
+  });
+}
+document.querySelectorAll(".chip").forEach(b=>b.onclick=()=>{
+  document.querySelectorAll(".chip").forEach(x=>x.classList.remove("on"));
+  b.classList.add("on"); filter=b.dataset.f; render();
+});
+document.getElementById("statCount").textContent=PROPS.length;
+document.getElementById("statRange").textContent="$216k–$1.25M";
+render();
+
+// ---- Detail modal ----
+let curProp=null, curIdx=0;
+function openModal(id){
+  curProp=PROPS.find(p=>p.id===id); curIdx=0;
+  renderSheet(); document.getElementById("modal").classList.add("open");
+  document.body.style.overflow="hidden";
+}
+function closeModal(){document.getElementById("modal").classList.remove("open");document.body.style.overflow="";}
+function galNav(d){const n=curProp.gallery.length;curIdx=(curIdx+d+n)%n;renderSheet();}
+function setImg(i){curIdx=i;renderSheet();}
+function renderSheet(){
+  const p=curProp, g=p.gallery[curIdx];
+  document.getElementById("sheet").innerHTML=`
+    <div class="sheet-hero">
+      <img src="${g.url}" alt="${g.room}">
+      <button class="sheet-close" onclick="closeModal()">×</button>
+      <button class="sheet-nav prev" onclick="galNav(-1)">‹</button>
+      <button class="sheet-nav next" onclick="galNav(1)">›</button>
+      <span class="sheet-caption">${g.room} · ${curIdx+1}/${p.gallery.length}</span>
+    </div>
+    <div class="sheet-body">
+      <div class="sheet-price">${fmt(p.price)}</div>
+      <div class="sheet-addr">${p.addr}</div>
+      <div class="sheet-loc">${p.city}, ${p.state} ${p.zip}</div>
+      <div class="sheet-specs">
+        <div><div class="n">${p.beds}</div><div class="l">Bedrooms</div></div>
+        <div><div class="n">${p.baths}</div><div class="l">Bathrooms</div></div>
+        <div><div class="n">${p.sqft.toLocaleString()}</div><div class="l">Sq Ft</div></div>
+      </div>
+      <div class="sheet-desc">${p.desc}</div>
+      <div class="thumbs">
+        ${p.gallery.map((x,i)=>`<button class="${i===curIdx?'active':''}" onclick="setImg(${i})"><img src="${x.url}" alt="${x.room}" loading="lazy"></button>`).join("")}
+      </div>
+      <button class="sheet-cta" onclick="closeModal();openChat()">Arrange a viewing</button>
+    </div>`;
+}
+document.addEventListener("keydown",e=>{
+  if(!document.getElementById("modal").classList.contains("open"))return;
+  if(e.key==="Escape")closeModal();
+  if(e.key==="ArrowLeft")galNav(-1);
+  if(e.key==="ArrowRight")galNav(1);
+});
+
+// ---- Chat ----
+const panel=document.getElementById("chatPanel"), btn=document.getElementById("chatBtn");
+function toggleChat(){panel.classList.toggle("open");btn.querySelector('.dot').style.display='none';if(panel.classList.contains("open"))document.getElementById("chatInput").focus();}
+function openChat(){if(!panel.classList.contains("open"))toggleChat();}
+function addMsg(t,who){const b=document.getElementById("chatBody");const d=document.createElement("div");d.className="msg "+who;d.textContent=t;b.appendChild(d);b.scrollTop=b.scrollHeight;return d;}
+function ask(q){document.getElementById("chatInput").value=q;send();}
+const SYSTEM=`You are the assistant for Elite Home Group, a real estate firm in Central New York. Answer ONLY using the listing data below (each listing includes a description). Be warm, concise (2-4 sentences), format prices with a dollar sign. If asked about something not in the data, offer to have an agent follow up. Encourage arranging a viewing when relevant.
+
+ACTIVE LISTINGS (JSON): ${JSON.stringify(PROPS.map(p=>({addr:p.addr,city:p.city,state:p.state,zip:p.zip,price:p.price,beds:p.beds,baths:p.baths,sqft:p.sqft,desc:p.desc})))}`;
+const PROXY=(document.querySelector('meta[name="llm-proxy-url"]')||{}).content||"";
+let history=[];
+async function send(){
+  const inp=document.getElementById("chatInput");
+  const q=inp.value.trim(); if(!q)return;
+  inp.value=""; document.getElementById("suggests").style.display="none";
+  addMsg(q,"me"); history.push({role:"user",content:q});
+  const typing=addMsg("Typing…","bot"); typing.classList.add("typing");
+  try{
+    const r=await fetch(PROXY+"/claude",{method:"POST",headers:{"Content-Type":"application/json"},
+      body:JSON.stringify({model:"claude-sonnet-5",max_tokens:1000,system:SYSTEM,messages:history})});
+    const data=await r.json();
+    const text=(data.content||[]).filter(x=>x.type==="text").map(x=>x.text).join("\n")||"Let me have an agent follow up on that.";
+    typing.remove(); addMsg(text,"bot"); history.push({role:"assistant",content:text});
+  }catch(e){ typing.remove(); addMsg("I'm having trouble connecting right now — please try again in a moment.","bot"); }
+}
+</script>
+</body>
+</html>
